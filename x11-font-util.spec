@@ -48,8 +48,8 @@ rm -rf %{buildroot}
 %_datadir/fonts/util/*
 %{_libdir}/pkgconfig/fontutil.pc
 %{_datadir}/aclocal/fontutil.m4
-%{_mandir}/man1/bdftruncate.1x.bz2
-%{_mandir}/man1/ucs2any.1x.bz2
+%{_mandir}/man1/bdftruncate.*
+%{_mandir}/man1/ucs2any.*
 
 
 
