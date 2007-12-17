@@ -6,7 +6,6 @@ Group:		Development/X11
 URL:		http://xorg.freedesktop.org
 Source:		http://xorg.freedesktop.org/releases/individual/font/font-util-%{version}.tar.bz2 
 License:	BSD
-BuildRoot:	%{_tmppath}/%{name}-root
 
 Requires:	bdftopcf
 Requires:	mkfontdir
