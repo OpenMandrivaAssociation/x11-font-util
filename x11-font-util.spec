@@ -1,6 +1,6 @@
 Name:		x11-font-util
 Version:	1.0.1
-Release:	%mkrel 4
+Release:	%mkrel 5
 Summary:	Xorg X11 font utilities
 Group:		Development/X11
 URL:		http://xorg.freedesktop.org
@@ -16,8 +16,7 @@ Requires:	fstobdf
 Requires:	showfont
 Requires:	xlsfonts
 
-
-BuildRequires:	x11-util-macros >= 1.0.1
+BuildRequires:	x11-util-macros >= 1.1.5
 
 %description
 Xorg X11 font utilities
@@ -26,7 +25,7 @@ Xorg X11 font utilities
 %setup -q -n font-util-%{version}
 
 %build
-%configure2_5x	--x-includes=%{_includedir}\
+%configure	--x-includes=%{_includedir}\
 		--x-libraries=%{_libdir} --with-mapdir=%_datadir/fonts/util
 
 %make
