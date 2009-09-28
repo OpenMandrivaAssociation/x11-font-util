@@ -1,6 +1,6 @@
 Name:		x11-font-util
 Version:	1.0.2
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Xorg X11 font utilities
 Group:		Development/X11
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -8,7 +8,13 @@ URL:		http://xorg.freedesktop.org
 Source:		http://xorg.freedesktop.org/releases/individual/font/font-util-%{version}.tar.bz2 
 License:	BSD
 
+%define bootstrap 0
+%{?_without_bootstrap: %global bootstrap 0}
+%{?_with_bootstrap: %global bootstrap 1}
+
+%if !%bootstrap
 Requires:	bdftopcf
+%endif
 Requires:	mkfontdir
 Requires:	mkfontscale
 Requires:	fonttosfnt
