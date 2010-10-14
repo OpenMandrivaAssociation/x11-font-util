@@ -1,5 +1,5 @@
 Name:		x11-font-util
-Version:	1.1.2
+Version:	1.2.0
 Release:	%mkrel 1
 Summary:	Xorg X11 font utilities
 Group:		Development/X11
