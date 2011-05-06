@@ -1,6 +1,6 @@
 Name:		x11-font-util
 Version:	1.2.0
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Xorg X11 font utilities
 Group:		Development/X11
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
