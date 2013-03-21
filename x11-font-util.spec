@@ -8,7 +8,7 @@ Release:	1
 Summary:	Xorg X11 font utilities
 Group:		Development/X11
 URL:		http://xorg.freedesktop.org
-Source:		http://xorg.freedesktop.org/releases/individual/font/font-util-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/font/font-util-%{version}.tar.bz2
 License:	BSD
 %if !%bootstrap
 Requires:	bdftopcf
@@ -22,12 +22,14 @@ Requires:	showfont
 Requires:	xlsfonts
 
 BuildRequires:	x11-util-macros >= 1.1.5
+Patch0:		aarch64.patch
 
 %description
 Xorg X11 font utilities.
 
 %prep
 %setup -q -n font-util-%{version}
+%apply_patches
 
 %build
 %configure2_5x \
