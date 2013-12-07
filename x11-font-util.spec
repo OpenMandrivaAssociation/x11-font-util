@@ -4,7 +4,7 @@
 
 Name:		x11-font-util
 Version:	1.3.0
-Release:	3
+Release:	4
 Summary:	Xorg X11 font utilities
 Group:		Development/X11
 URL:		http://xorg.freedesktop.org
