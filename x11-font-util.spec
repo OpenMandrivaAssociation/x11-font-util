@@ -3,8 +3,8 @@
 %{?_with_bootstrap: %global bootstrap 1}
 
 Name:		x11-font-util
-Version:	1.3.0
-Release:	8
+Version:	1.3.1
+Release:	1
 Summary:	Xorg X11 font utilities
 Group:		Development/X11
 URL:		http://xorg.freedesktop.org
@@ -32,7 +32,7 @@ Xorg X11 font utilities.
 %apply_patches
 
 %build
-%configure2_5x \
+%configure \
 	--x-includes=%{_includedir} \
 	--x-libraries=%{_libdir} \
 	--with-mapdir=%{_datadir}/fonts/util
