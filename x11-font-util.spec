@@ -2,7 +2,7 @@
 
 Name:		x11-font-util
 Version:	1.3.2
-Release:	1
+Release:	2
 Summary:	Xorg X11 font utilities
 Group:		Development/X11
 URL:		http://xorg.freedesktop.org
@@ -19,7 +19,7 @@ Requires:	fslsfonts
 Requires:	fstobdf
 Requires:	showfont
 Requires:	xlsfonts
-BuildRequires:	x11-util-macros >= 1.1.5
+BuildRequires:	pkgconfig(xorg-macros)
 
 %description
 Xorg X11 font utilities.
@@ -46,5 +46,5 @@ Xorg X11 font utilities.
 %{_datadir}/fonts/util/*
 %{_libdir}/pkgconfig/fontutil.pc
 %{_datadir}/aclocal/fontutil.m4
-%{_mandir}/man1/bdftruncate.*
-%{_mandir}/man1/ucs2any.*
+%doc %{_mandir}/man1/bdftruncate.*
+%doc %{_mandir}/man1/ucs2any.*
