@@ -1,8 +1,8 @@
 %bcond_with bootstrap
 
 Name:		x11-font-util
-Version:	1.4.0
-Release:	2
+Version:	1.4.1
+Release:	1
 Summary:	Xorg X11 font utilities
 Group:		Development/X11
 URL:		http://xorg.freedesktop.org
