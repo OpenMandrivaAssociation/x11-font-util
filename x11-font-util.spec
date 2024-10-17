@@ -5,7 +5,7 @@ Version:	1.4.1
 Release:	1
 Summary:	Xorg X11 font utilities
 Group:		Development/X11
-URL:		http://xorg.freedesktop.org
+URL:		https://xorg.freedesktop.org
 Source0:	http://xorg.freedesktop.org/releases/individual/font/font-util-%{version}.tar.xz
 Source1:	x11-font-util.rpmlintrc
 License:	BSD
