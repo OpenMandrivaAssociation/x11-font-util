@@ -19,6 +19,11 @@ Requires:	fslsfonts
 Requires:	fstobdf
 Requires:	showfont
 Requires:	xlsfonts
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(xorg-macros)
 
 %description
