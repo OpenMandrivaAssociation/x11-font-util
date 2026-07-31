@@ -1,7 +1,7 @@
 %bcond_with bootstrap
 
 Name:		x11-font-util
-Version:	1.4.1
+Version:	1.4.2
 Release:	1
 Summary:	Xorg X11 font utilities
 Group:		Development/X11
@@ -30,7 +30,7 @@ BuildRequires:	pkgconfig(xorg-macros)
 Xorg X11 font utilities.
 
 %prep
-%autosetup -n font-util-%{version} -p1
+%autosetup -n font-util-1.4.2 -p1
 
 %build
 %configure \
